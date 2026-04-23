@@ -35,4 +35,13 @@ return [
         ],
     ],
 
+    'sepay' => [
+        'webhook_api_key' => env('SEPAY_WEBHOOK_API_KEY'),
+        'account_number' => env('SEPAY_ACCOUNT_NUMBER'),
+        'account_name' => env('SEPAY_ACCOUNT_NAME'),
+        'bank_code' => env('SEPAY_BANK_CODE'),
+        'qr_template' => env('SEPAY_QR_TEMPLATE'),
+        'order_expiration_minutes' => (int) env('SEPAY_ORDER_EXPIRATION_MINUTES', 30),
+    ],
+
 ];
